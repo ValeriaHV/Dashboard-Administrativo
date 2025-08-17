@@ -14,6 +14,7 @@ Este dashboard es una simulación de un sistema administrativo para gestión de 
 - **usuarios.html:** Lista de usuarios del sistema, área, correo de contacto y último acceso.
 - **styles.css:** Hoja de estilos principal, con comentarios explicativos sobre el uso de CSS Grid, media queries, hover, focus y roles ARIA para accesibilidad.
 - **chart.js:** Script para generar el gráfico de barras en la página principal.
+- **menu.js:** Script para generar un menú hamburguesa a la barra lateral en dispositivos móviles.
 
 ## Estructura del proyecto
 
@@ -25,6 +26,7 @@ Este dashboard es una simulación de un sistema administrativo para gestión de 
 ├── assets/
 |   ├── style.css             # Archivo con los estilos CSS
 │   ├── chart.js              # Archivo JavaScript para gráficos
+│   ├── menu.js               # Archivo JavaScript para menpu hamburguesa
 │   ├── icons/
 │   |   ├── inventario.png
 │   |   ├── resumen.png
@@ -44,6 +46,7 @@ Este dashboard es una simulación de un sistema administrativo para gestión de 
 - Se agregó soporte visual de `:focus` en los estilos para mejorar la experiencia con teclado.
 - Los colores y el tamaño de fuente dan buen contraste y legibilidad para personas con baja visión.
 - El diseño responsive y el uso de bloques grandes y centrados se adapta dispositivos móviles y la navegación táctil.
+- El menú hamburguesa `button` facilita el uso de la barra lateral en navegacion para dispositivos móviles.
 
 ## Cómo ver la página
 
