@@ -375,7 +375,7 @@ body {
   z-index: -1;
 }
 
-/* Oculta sidebar y muestra menú hamburguesa./
+/* Oculta sidebar y muestra menú hamburguesa.*/
 @media (max-width: 600px) {
   .sidebar {
     display: none;
@@ -463,4 +463,5 @@ button:focus,
 /*Deshabilitar elementos visualmente.*/
 [aria-hidden="true"] {
   pointer-events: none;
+
 }
