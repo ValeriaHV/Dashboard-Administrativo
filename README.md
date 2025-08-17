@@ -36,7 +36,7 @@ Este dashboard es una simulación de un sistema administrativo para gestión de 
 
 ## Importante
 
-> **Todos los nombres, correos electrónicos, empresas y datos utilizados son totalmente ficticios y solo tienen fines educativos y demostrativos.**
+> **Todos los nombres, correos electrónicos  y datos utilizados son totalmente ficticios, solo tienen fines educativos y demostrativos.**
 
 ## Semántica y accesibilidad
 
