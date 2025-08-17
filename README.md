@@ -10,17 +10,17 @@ Este dashboard es una simulación de un sistema administrativo para gestión de 
 ## Caracteristicas
 
 - **index.html:** Página principal con resumen de ventas, inventario y usuarios, incluyendo un gráfico visual y tablas.
-- **inventarios.html:** Listado completo de productos en inventario, categorías, cantidades y estado.
-- **usuarios.html:** Listado de usuarios del sistema, incluyendo clientes y empresas.
+- **inventarios.html:** Lista completo de productos en inventario, categorías, cantidades y estado.
+- **usuarios.html:** Lista de usuarios del sistema, área, correo de contacto y último acceso.
 - **styles.css:** Hoja de estilos principal, con comentarios explicativos sobre el uso de CSS Grid, media queries, hover, focus y roles ARIA para accesibilidad.
-- **chart.js:** Script para generar el gráfico de barras dinámico en la página principal.
+- **chart.js:** Script para generar el gráfico de barras en la página principal.
 
 ## Estructura del proyecto
 
 ```
 ├── index.html                # Página principal
 ├── inventarios.html          # Página individual: inventario de productos
-├── usuarios.html                # Página individual: Lista de usuarios
+├── usuarios.html             # Página individual: Lista de usuarios
 ├── README.md                 # Este archivo
 ├── assets/
 |   ├── style.css             # Archivo con los estilos CSS
