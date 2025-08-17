@@ -34,10 +34,6 @@ Este dashboard es una simulación de un sistema administrativo para gestión de 
 │   |   ├── user.png
 ```
 
-## Importante
-
-> **Todos los nombres, correos electrónicos  y datos utilizados son totalmente ficticios, solo tienen fines educativos y demostrativos.**
-
 ## Semántica y accesibilidad
 
 - Se utilizaron etiquetas semánticas como `<header>`, `<main>`, `<section>`, `<nav>`, `<footer>`, `<ul>`, `<li>`, `<h1>`–`<h2>`, para estructurar la información correctamente.
@@ -54,6 +50,10 @@ Este dashboard es una simulación de un sistema administrativo para gestión de 
 1. Descarga el proyecto (o clónalo desde GitHub).
 2. Abre el archivo `index.html` con tu navegador.
 3. Navega entre las páginas usando los enlaces disponibles.
+
+## Importante
+
+> **Todos los nombres, correos electrónicos  y datos utilizados son totalmente ficticios, solo tienen fines educativos y demostrativos.**
 
 ## Autor
 
