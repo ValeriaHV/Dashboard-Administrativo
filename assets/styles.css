@@ -12,15 +12,18 @@
 }
 
 html {
+  /*Cálculo del tamaño de los elementos.*/
   box-sizing: border-box;
   font-size: 16px;
 }
 
 *, *::before, *::after {
+  /*Evita problemas de layout.*/
   box-sizing: inherit;
 }
 
 body {
+  /*Estilo general para el fondo y color del texto.*/
   margin: 0;
   font-family: var(--font-main);
   background: var(--color-bg);
@@ -28,6 +31,7 @@ body {
 }
 
 .dashboard-grid {
+  /*División del dashboard - Uso CSS Grid.*/
   display: grid;
   grid-template-areas:
     "sidebar header"
@@ -40,6 +44,7 @@ body {
 }
 
 .sidebar {
+  /*Menpu a la izquierda. Uso de flexbox para ubicar elementos verticalmente.*/
   grid-area: sidebar;
   background: var(--color-sidebar);
   color: #fff;
@@ -51,6 +56,7 @@ body {
   min-width: 0;
 }
 
+/*Ajuste de la imagen del logo.*/
 .sidebar .logo {
   display: flex;
   align-items: center;
@@ -69,6 +75,7 @@ body {
   letter-spacing: 1px;
 }
 
+/*Menú de navegación.*/
 .menu {
   flex: 1;
   list-style: none;
@@ -80,6 +87,7 @@ body {
   margin-bottom: 1rem;
 }
 
+/*Enlaces del menú lateral.*/
 .menu a {
   text-decoration: none;
   color: #fff;
@@ -92,12 +100,14 @@ body {
   gap: 0.7rem;
 }
 
+/*:hover para mostrar dónde esta el cursor. :focus para resaltar lo seleccionado - navegación con Tab.*/
 .menu a:hover,
 .menu a:focus {
   background: var(--color-accent);
   color: #111;
 }
 
+/*Iconos del menú. filter para resaltar sobre fondo oscuro.*/
 .menu .icon {
   width: 22px;
   height: 22px;
@@ -105,6 +115,7 @@ body {
   vertical-align: middle;
 }
 
+/*Encabezado. flexbox para alinear el título a la izquierda y el usuario a la derecha.*/
 .header {
   grid-area: header;
   background: var(--color-card);
@@ -139,7 +150,7 @@ body {
   font-weight: 500;
 }
 
-/* Menú hamburguesa: solo visible en móvil */
+/* Menú hamburguesa: solo visible en celular.*/
 .menu-btn {
   display: none;
   background: none;
@@ -150,7 +161,7 @@ body {
   margin-left: 1rem;
 }
 
-/* Main content */
+/* Main content.*/
 .main-content {
   grid-area: main;
   padding: 2rem;
@@ -159,6 +170,7 @@ body {
   gap: 2rem;
 }
 
+/*Tarjetas de resumen. Ventas, inventario y usuarios.*/
 .summary-cards {
   display: flex;
   gap: 1.5rem;
@@ -169,16 +181,17 @@ body {
   color: var(--color-primary);
   padding: 1.5rem 2rem;
   border-radius: 12px;
-  flex: 1;
+  flex: 1;/*Mismo ancho.*/
   box-shadow: 0 2px 8px rgba(46, 62, 98, 0.07);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   transition: background 0.2s, transform 0.2s;
-  cursor: pointer;
+  cursor: pointer; /*Interactiva.*/
   outline: none;
 }
 
+/*Tarjetas. Uso de hiver y focus para accesibilidad y facilidad visual.*/
 .card:hover,
 .card:focus {
   background: var(--color-accent);
@@ -199,6 +212,7 @@ body {
   font-weight: bold;
 }
 
+/*Contenedor para separar la sección.*/
 .inventory-section {
   background: var(--color-card);
   border-radius: 12px;
@@ -220,6 +234,7 @@ body {
   flex-wrap: wrap;
 }
 
+/*Tablas. overflow-x para ser responsiva en pantallas pequeñas.*/
 .data-table {
   min-width: 220px;
   flex: 2;
@@ -239,11 +254,13 @@ body {
   vertical-align: middle;
 }
 
+/*Encabezados de tabla.*/
 .data-table th {
   background: var(--color-sidebar);
   color: var(--color-accent);
 }
 
+/*Facilita lectura y selección.*/
 .data-table tbody tr {
   transition: background 0.2s;
 }
@@ -256,16 +273,19 @@ body {
   border-bottom: 1px solid #333;
 }
 
+/*Última columna de la tabla. Color verde si esta disponible.*/
 .data-table td:last-child {
   font-weight: bold;
   color: var(--color-success);
 }
 
+/* Clase para bajo stock. Para cambio de color si esta en Bajo stock.*/
 .bajo-stock {
   color: var(--color-warning) !important;
   font-weight: bold;
 }
 
+/*Gráfico de ventas.*/
 .chart-section {
   width: 100%;
   display: flex;
@@ -288,6 +308,7 @@ body {
   margin-top: 0.5rem;
 }
 
+/* Footer.*/
 .footer {
   grid-area: footer;
   background: var(--color-footer);
@@ -299,7 +320,7 @@ body {
   padding: 0 2rem;
 }
 
-/* Menú hamburguesa móvil */
+/* Menú hamburguesa.*/
 .mobile-menu {
   display: none;
   position: fixed;
@@ -345,6 +366,7 @@ body {
   height: 26px;
 }
 
+/* Fondo oscurecido detrás del menú hamburguesa.*/
 .mobile-menu.active::before {
   content: "";
   position: fixed;
@@ -353,7 +375,7 @@ body {
   z-index: -1;
 }
 
-/* Responsive: oculta sidebar y muestra menú hamburguesa en móvil */
+/* Oculta sidebar y muestra menú hamburguesa.*/
 @media (max-width: 600px) {
   .sidebar {
     display: none;
@@ -367,16 +389,17 @@ body {
   }
 }
 
-/* Muestra el menú hamburguesa cuando está activo */
+/* Muestra el menú hamburguesa cuando está activo.*/
 .mobile-menu.active {
   display: block;
 }
 
-/* Evita scroll en el fondo cuando el menú está abierto */
+/* Evita scroll en el fondo cuando el menú está abierto.*/
 body.menu-open {
   overflow: hidden;
 }
 
+/* Media queries. Adapta a distintos tipos de pantalla. Oculta o redimensiona elementos para uso en tablets o celulares. */
 @media (max-width: 900px) {
   .dashboard-grid {
     grid-template-columns: 70px 1fr;
@@ -413,6 +436,9 @@ body.menu-open {
     grid-template-columns: 1fr;
     grid-template-rows: 60px 1fr 40px;
   }
+  .sidebar {
+    display: none;
+  }
   .header {
     padding: 0 1rem;
   }
@@ -426,7 +452,7 @@ body.menu-open {
   }
 }
 
-/* Accesibilidad: Foco visible en elementos navegables */
+/*Foco visible. Outlines en los elementos interactivos para saber cuál está seleccionado.*/
 a:focus,
 button:focus,
 .card:focus {
@@ -434,6 +460,7 @@ button:focus,
   outline-offset: 2px;
 }
 
+/*Deshabilitar elementos visualmente.*/
 [aria-hidden="true"] {
   pointer-events: none;
 }
